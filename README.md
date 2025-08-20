@@ -26,16 +26,16 @@ npm install
 
 ## Usage
 Run this script after exporting your notes with obsidian-webpage-export.
-You can run the script using either Bun or Node.js:
+You can run the script using either Bun or Node:
 
 **With Bun**
 ```sh
 bun src/addFrontmatter.ts <exported-folder>
 ```
 
-**With Node.js**
+**With Node**
 ```sh
-node src/addFrontmatter.js <exported-folder>
+node src/addFrontmatter.ts <exported-folder>
 ```
 
 Replace `<exported-folder>` with the path to your exported HTML files.
