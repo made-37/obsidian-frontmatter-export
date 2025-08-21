@@ -165,7 +165,7 @@ function addPropertiesTable(file: string, linkTargets: LinkTargets): void {
     const h1 = document.querySelector('h1');
     if (!h1) return;
     const table = document.createElement('table');
-    table.style.backgroundColor = '#f6f6f6';
+    table.style.backgroundColor = 'var(--background-secondary-alt)';
     table.style.borderRadius = '4px';
     table.style.margin = '2em auto';
     table.style.width = '90%';
@@ -181,7 +181,9 @@ function addPropertiesTable(file: string, linkTargets: LinkTargets): void {
         tdKey.textContent = key;
         tdKey.style.fontWeight = 'lighter';
         tdKey.style.whiteSpace = 'nowrap';
+        tdKey.style.fontSize = '0.9rem';
         const tdValue = document.createElement('td');
+        tdValue.style.fontSize = '0.9rem';
         tdValue.appendChild(createHtmlElement(key, value, document, linkTargets));
         tr.appendChild(tdKey);
         tr.appendChild(tdValue);
